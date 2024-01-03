@@ -91,11 +91,21 @@ public class Basic{
 
          ternary();
     }
-    
+
     public static void ternary(){
         int number = 4;
         String type = ((number%2) == 0) ? "even" : "odd";
         System.out.println(type);
+
+        college();
+    }
+
+
+    public static void college(){
+        int marks = 70;
+
+        String reportCard = marks >= 33 ? "PASS" : "FAIL";
+        System.out.println(reportCard);
     }
 
     
