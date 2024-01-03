@@ -21,12 +21,39 @@ public class Basic{
         int B = 5;
 
         if(A >= B ){
-           System.out.println("A is largest of 2"); 
+           System.out.println("A is largest of 2");
         }
         else{
             System.out.println("B is largest of 2");
         }
+        oddoreven();
     }
+    public static void oddoreven(){
+        Scanner sc = new Scanner (System.in);
+        int number = sc.nextInt();
+
+        if(number % 2 == 0){
+            System.out.println("EVEN");
+        }
+        else{
+            System.out.println("ODD");            
+        }
+        statements();
+    }
+    public static void statements(){
+        int age = 6;
+        if(age >= 18){
+            System.out.println("Adult");
+        }
+        else if (age >= 13 && age < 18){
+            System.out.println("teenager");
+        }
+        else{
+            System.out.println("child");
+        }
+
+    }
+
 
     
 }
