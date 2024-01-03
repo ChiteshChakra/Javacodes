@@ -13,8 +13,8 @@ public class Basic{
         else{
             System.out.println("not adult");
         }
+
         larger();
-        
     }
     public static void larger() {
         int A = 1;
@@ -26,6 +26,7 @@ public class Basic{
         else{
             System.out.println("B is largest of 2");
         }
+
         oddoreven();
     }
     public static void oddoreven(){
@@ -38,6 +39,7 @@ public class Basic{
         else{
             System.out.println("ODD");            
         }
+
         statements();
     }
     public static void statements(){
@@ -52,8 +54,49 @@ public class Basic{
             System.out.println("child");
         }
 
+        earning();
     }
+    public static void earning(){
+        Scanner sc = new Scanner(System.in);
+    int income = sc.nextInt();
+    int tax;
 
+    if(income < 500000){
+        tax = 0;
+    }
+    else if (income >= 500000 && income < 1000000){
+        tax = (int) (income * 0.2);
+    }
+    else{
+        tax = (int) (income *0.3);
+    }
+    System.out.println("your tax is :" + tax);
+
+
+    largest ();
+    }
+   
+    
+    public static void largest(){
+        int a = 1 , b = 3 , c = 6;
+         if( (a >= b) && (a > c)){
+            System.out.println("largest is a");
+         }
+         else if(b >= c){
+            System.out.println("largest is b");
+         }
+         else {
+            System.out.println("largest is c");
+         }
+
+         ternary();
+    }
+    
+    public static void ternary(){
+        int number = 4;
+        String type = ((number%2) == 0) ? "even" : "odd";
+        System.out.println(type);
+    }
 
     
 }
