@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Basic{
     public static void main(String args[]){
+        
         int age = 16;
         if(age >= 18){
             System.out.println("adult : drive,vote");
@@ -29,6 +30,7 @@ public class Basic{
 
         oddoreven();
     }
+
     public static void oddoreven(){
         Scanner sc = new Scanner (System.in);
         int number = sc.nextInt();
@@ -123,7 +125,31 @@ public class Basic{
 
 
         }
+        cal();
         
+
+    }
+    
+    public static void cal(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter a :");
+        int a = sc.nextInt();
+        System.out.println("enter b : ");
+        int b =sc.nextInt();
+        System.out.println("enter operator ");
+        char operator = sc.next().charAt(0);
+
+        switch(operator){
+            case '+' : System.out.println(a+b);
+                        break;
+            case '-' : System.out.println(a-b);
+                        break;
+            case '*' : System.out.println(a*b);
+                        break;
+            case '/' : System.out.println(a/b);
+                        break;
+    
+        }
 
     }
     
