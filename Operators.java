@@ -48,8 +48,8 @@ class Operators {
         }
     }
     public static void main(String[] args) {
-        //arthematicOperators();
-        //assignmentOperators();
+        arthematicOperators();
+        assignmentOperators();
         relationalOperators();
         logicalOperators();
     }    
