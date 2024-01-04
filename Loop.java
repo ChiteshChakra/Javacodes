@@ -94,5 +94,29 @@ public class Loop{
         }
         System.out.println(rev);
 
+        hox();
     }
+    public static void hox() {
+        
+        int counter =1;
+        do{
+            System.out.println("student");
+            counter ++;
+        }
+        while(counter <=15);
+        stsm();
+    }
+    public static void stsm(){
+
+    for(int i=1;i<=5;i++){
+        if(i==3){
+            break;
+        }
+        System.out.println(i);
+    }
+    System.out.println("out of the loop");
+
+
+    }
+    
 }
