@@ -18,7 +18,7 @@ public class Loop3 {
         }
         System.out.println(i);
     }
-    System.out.println("out the loop");
+    System.out.println("out of the loop");
 
 
     }
