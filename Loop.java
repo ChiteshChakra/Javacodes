@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Loop{
-    public static void main (String args[]){
+    public static void jjk(){
         int counter = 0;
         while(counter < 15){
             System.out.println("hello");
@@ -9,7 +9,7 @@ public class Loop{
         }
         System.out.println("printer hello 15x");
 
-        number();
+        
     }
     public static void number (){
         int counter =1;
@@ -19,7 +19,7 @@ public class Loop{
         }
         System.out.println();
 
-        usernumber();
+       
     }
 
     public static void usernumber(){
@@ -33,7 +33,7 @@ public class Loop{
         }
         System.out.println();
 
-        natural();
+       
     }
 
     public static void natural(){
@@ -46,7 +46,7 @@ public class Loop{
             i++;
         }
         System.out.println("sum is :" + sum);
-        krt();
+        
     }
     public static void krt() {
         for(int  i=1;i<=10;i++){
@@ -55,7 +55,7 @@ public class Loop{
         }
         System.out.println();
 
-        pattern();
+        
     }
     public static void pattern(){
         int lines = 1;
@@ -63,7 +63,7 @@ public class Loop{
             System.out.println("****");
         }
 
-       reversenumber();
+       
         }
     
     public static void reversenumber(){
@@ -78,7 +78,7 @@ public class Loop{
         }
             System.out.println();
 
-            reversenumber2();
+            
         }
     
     public static void reversenumber2(){
@@ -94,7 +94,7 @@ public class Loop{
         }
         System.out.println(rev);
 
-        hox();
+        
     }
     public static void hox() {
         
@@ -104,7 +104,7 @@ public class Loop{
             counter ++;
         }
         while(counter <=15);
-        stsm();
+        
     }
     public static void stsm(){
 
@@ -116,7 +116,7 @@ public class Loop{
     }
     System.out.println("out of the loop");
 
-    user();
+    
     }
     
 
@@ -132,7 +132,7 @@ public class Loop{
             System.out.println(n);
             
         }while(true);
-        con();
+        
 
     }
     public static void  con(){
@@ -145,6 +145,34 @@ public class Loop{
             }
             System.out.println(i);
         }
+        
     }
-    
+    public static void newcon(){
+        Scanner sc = new Scanner(System.in);
+
+        do {
+            System.out.println("enter your numbe x:");
+            int n=sc.nextInt();
+            if(n % 10==0){
+              break;
+            }
+            System.out.println("number was : " + n);
+
+        }while(true);
+    }
+    public static void main(String[] args) {
+        jjk();
+        newcon();
+        con();
+        hox();
+        reversenumber2();
+        reversenumber();
+        stsm();
+        user();
+        pattern();
+        krt();
+        usernumber();
+        number();
+        natural();
+    }
 }
