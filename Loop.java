@@ -33,6 +33,18 @@ public class Loop {
         }
         System.out.println();
 
+        natural();
+    }
 
+    public static void natural(){
+        Scanner sc = new Scanner (System.in);
+        System.out.println("enter the number n :");
+        int n = sc.nextInt();
+        int sum=0,  i=1;
+        while(i<=n){
+            sum+=i;
+            i++;
+        }
+        System.out.println("sum is :" + sum);
     }
 }
