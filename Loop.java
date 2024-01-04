@@ -18,5 +18,21 @@ public class Loop {
             counter++;
         }
         System.out.println();
+
+        usernumber();
+    }
+
+    public static void usernumber(){
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter range n :");
+        int   n = sc.nextInt();
+        int counter =1;
+        while(counter <= n){
+            System.out.print(counter + " ");
+            counter ++;
+        }
+        System.out.println();
+
+
     }
 }
