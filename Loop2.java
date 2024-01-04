@@ -42,7 +42,7 @@ public class Loop2 {
         int lastdigit;
         while ( n>0){
             lastdigit = n%10;
-            rev =(rev*10) +lastdigit;
+            rev =(rev*10) +lastdigit;// storing the last digit 
             n=n/10;
         }
         System.out.println();
