@@ -160,19 +160,38 @@ public class Loop{
 
         }while(true);
     }
+    public static void ime(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number:");
+        int n =sc.nextInt();
+        for(int i=2;i<=n-1;i++){
+            if(n%i == 0){
+                System.out.println("not prime");
+            }
+            else{
+                System.out.println("prime");
+            }
+            break;
+
+        }
+
+
+
+    }
     public static void main(String[] args) {
-        jjk();
-        newcon();
-        con();
-        hox();
-        reversenumber2();
-        reversenumber();
-        stsm();
-        user();
-        pattern();
-        krt();
-        usernumber();
-        number();
-        natural();
+        // jjk();
+        // newcon();
+        // con();
+        // hox();
+        // reversenumber2();
+        // reversenumber();
+        // stsm();
+        // user();
+        // pattern();
+        // krt();
+        // usernumber();
+        // number();
+        // natural();
+        ime();
     }
 }
