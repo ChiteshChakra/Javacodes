@@ -179,19 +179,19 @@ public class Loop{
 
     }
     public static void main(String[] args) {
-        // jjk();
-        // newcon();
-        // con();
-        // hox();
-        // reversenumber2();
-        // reversenumber();
-        // stsm();
-        // user();
-        // pattern();
-        // krt();
-        // usernumber();
-        // number();
-        // natural();
+        jjk();
+        newcon();
+        con();
+        hox();
+        reversenumber2();
+        reversenumber();
+        stsm();
+        user();
+        pattern();
+        krt();
+        usernumber();
+        number();
+        natural();
         ime();
     }
 }
