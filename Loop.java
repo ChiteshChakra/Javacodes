@@ -132,7 +132,19 @@ public class Loop{
             System.out.println(n);
             
         }while(true);
+        con();
 
+    }
+    public static void  con(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the number n:");
+        int n = sc.nextInt();
+        for(int i =n;i<=5;i++){
+            if(i==3){
+                continue;
+            }
+            System.out.println(i);
+        }
     }
     
 }
