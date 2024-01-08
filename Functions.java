@@ -121,7 +121,12 @@ public class Functions{
         //System.out.println(suum(4.5f,7.8f));
 
         //prime is true or not 
-         System.out.println(isprime(5));
+        // System.out.println(isPrime(5));
+
+        //in built 
+        //prime is true or not 
+        // System.out.println(isprime(5));
+
 
 
        
