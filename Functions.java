@@ -88,46 +88,97 @@ public class Functions{
         }
         return true;
     }
+    //10
+
+    public static void primerange(int n){
+        for(int i=2;i<=n;i++){
+            if(isPrime(i)){
+                System.out.print(i+ " ");
+            }
+        }
+        System.out.println();
+
+    }
+    //11
+    public static void binaryToDecimal(int biNum){
+        int myNum = biNum;
+        int pow = 0;
+        int decNum = 0;
+        while(biNum > 0){
+            int lastDigit = biNum %10;
+            decNum = decNum + (lastDigit *(int) Math.pow(1 , 2));
+             pow++;
+             biNum = biNum/10;
+        }
+        System.out.println("decimal " + myNum + " = " + decNum);
+    }
+    //12
+    public static void decimalToBinary(int n){
+        int myNum = n;
+        int pow = 0 ;
+        int biNum = 0;
+        while(n > 0){
+            int reminder = n % 2;
+            biNum = biNum + (reminder * (int )Math.pow(10,pow));
+
+            pow ++;
+            n= n/2;
+
+        }
+        System.out.println(" binary for of " + myNum + " = " + biNum);
+
+        
+
+    }
 
     //main function
     public static void main(String args[]){
-        
+        //Swapping of two numbers
         //int a =5;
         //int b=10;
         //swap();
 
-       // calsum();
+        //Calculating sum
+        // calsum();
 
+        //Hello program
         //hello();
 
-        //product of a and b
+        //Product of a and b
         // int prod = multi(a,b);
         // System.out.println(" a * b = "+prod);
         // prod = multi(12,4);
         // System.out.println("a * b ="+prod);
         
-        //factorial
+        //Factorial
         //System.out.println(factorial(10));
         
-        //binomial coefficient
+        //Binomial coefficient
         //System.out.println(bio(5 ,2));
 
-        //function overloading using parameters
+        //Function overloading using parameters
         // System.out.println(summ(3,5));
         // System.out.println(summ(4,5,6));
 
-        //functiion overloading using datatypes
+        //Functiion overloading using datatypes
         //System.out.println(suum(3,5));
         //System.out.println(suum(4.5f,7.8f));
 
-        //prime is true or not 
+        //Prime is true or not 
         // System.out.println(isPrime(5));
 
-        //in built 
-        //prime is true or not 
+        //In built 
+        //Prime is true or not 
         // System.out.println(isprime(5));
 
+        //Prime in range
+        //primerange(20);
 
+        //Binry to decimal
+        //binaryToDecimal(103);
+
+        //Decimal to binary
+        decimalToBinary(7);
 
        
     }
