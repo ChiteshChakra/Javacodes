@@ -53,11 +53,40 @@ public class Pattern {
                 System.out.println();
             }
         }
+        public static void inverted_rotated_half(int n){
+            // outer 
+            for(int  i=1;i<=n;i++){
+                //spaces 
+                for(int j=1;j<=n-i;j++){
+                    System.out.print(" ");
+                }
+                //stars
+                for(int j=1;j<=i;j++){
+                    System.out.print("*");
+
+                }
+                System.out.println();
+                
+            }
+
+        }
+        public static void  inverted_half_pyramid_withNumbers(int n){
+            for(int i=1; i<= n; i++){
+                //inner - numbers
+                for(int j=1; j<=n-i+1;j++){
+                    System.out.print(j+" ");
+                }
+                System.out.println();
+
+            }
+        }
     public static void main(String[] args) {
         //star();
         //revpatt();
         //pyra();
         //cho();
-        hollow_rectangle(4,5);
+        //hollow_rectangle(4,5);
+        //inverted_rotated_half(6);
+        inverted_half_pyramid_withNumbers(7);
     }
 }
