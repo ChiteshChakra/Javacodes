@@ -126,10 +126,8 @@ public class Functions{
 
         }
         System.out.println(" binary for of " + myNum + " = " + biNum);
-
-        
-
     }
+    
 
     //main function
     public static void main(String args[]){
@@ -178,7 +176,7 @@ public class Functions{
         //binaryToDecimal(103);
 
         //Decimal to binary
-        decimalToBinary(7);
+        //decimalToBinary(7);
 
        
     }
